@@ -13,7 +13,11 @@ public class ProductService {
     public List<Product> getAllProducts() { return productRepository.findAll(); }
 
     public Product createProduct(ProductDto dto) {
-        return productRepository.save(Product.builder().name(dto.getName()).price(dto.getPrice()).categoryId(dto.getCategoryId()).build());
+        Product product = new Product();
+        product.setName(dto.getName());
+        product.setPrice(dto.getPrice());
+        product.setCategory_id(dto.getCategory_id());
+        return productRepository.save(product);
     }
 
     public Product updateProduct(Product product) {
