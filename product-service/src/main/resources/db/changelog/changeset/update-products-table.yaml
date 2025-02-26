@@ -4,7 +4,7 @@ databaseChangeLog:
       author: Gleb
       changes:
         - renameColumn:
-            columnDataType: int
+            columnDataType: bigint
             newColumnName: category_id
             oldColumnName: categoryId
             schemaName: pizza-shop-product

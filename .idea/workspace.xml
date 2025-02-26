@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/changeset/update-products-table.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/changeset/update-products-table.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/changeset/update-products-table.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="auth-service" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,13 +73,14 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "product-service",
+    "git-widget-placeholder": "#2 on product-service",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",

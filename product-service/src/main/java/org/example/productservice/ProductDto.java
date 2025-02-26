@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 public class ProductDto {
     private String name;
     private int price;
-    private Long category_id;
+    private Long categoryId;
 
     public String getName() {
         return name;
@@ -26,11 +26,11 @@ public class ProductDto {
         this.price = price;
     }
 
-    public Long getCategory_id() {
-        return category_id;
+    public Long getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategory_id(Long category_id) {
-        this.category_id = category_id;
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
     }
 }
