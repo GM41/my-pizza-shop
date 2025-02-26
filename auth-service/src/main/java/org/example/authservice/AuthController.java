@@ -11,12 +11,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/v1/auth")
 public class AuthController {
     @Autowired
     private AuthService service;
-    @Autowired
-    private AuthenticationManager authenticationManager;
 
     @PostMapping("/register")
     public ResponseEntity<User> addNewUser(@RequestBody User user) {
@@ -25,12 +23,7 @@ public class AuthController {
 
     @PostMapping("/token")
     public String getToken(@RequestBody AuthRequest request){
-        Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getLogin(), request.getPassword()));
-        if (authenticate.isAuthenticated()){
-            return service.generateToken(request.getLogin());
-        } else {
-            throw new RuntimeException("Authentication failed");
-        }
+        return service.generateToken(request.getLogin(), request.getPassword());
     }
 
     @GetMapping("/validate")
