@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="init order service">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="product-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.productservice.ProductServiceApplication" />
@@ -150,6 +167,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.OrderServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -206,13 +224,13 @@
       <option name="project" value="LOCAL" />
       <updated>1740082017232</updated>
     </task>
-    <task id="LOCAL-00004" summary="init product service">
+    <task id="LOCAL-00004" summary="init order service">
       <option name="closed" value="true" />
-      <created>1740500936306</created>
+      <created>1740914564481</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1740500936306</updated>
+      <updated>1740914564481</updated>
     </task>
     <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
       <option name="closed" value="true" />
@@ -238,7 +256,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +294,7 @@
     <MESSAGE value="added entity and dto classes, and also repository" />
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="создан микросервис для пользователей" />
+    <MESSAGE value="init order service" />
+    <option name="LAST_COMMIT_MESSAGE" value="init order service" />
   </component>
 </project>
