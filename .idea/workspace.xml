@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="добавлен сервер для микросервисов">
-      <change afterPath="$PROJECT_DIR$/api-gateway/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/org/example/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/client/ClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/org/example/client/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/test/java/org/example/client/ClientApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="исправлена ошибка с созданием пользователя">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/apigateway/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/apigateway/filter/RouteValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/config/AuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/config/AuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +21,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -56,7 +47,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -79,9 +70,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "Spring Boot.UserMicroserviceApplication.executor": "Run",
+    "git-widget-placeholder": "#1 on auth-service",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
@@ -101,6 +94,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\auth-service\src\main\resources\db.changelog" />
       <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\api-gateway\src\main\java\org.example.apigateway" />
       <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\" />
     </key>
@@ -114,17 +108,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
+      <option name="VM_PARAMETERS" value="-DJWT_SECRET=a78db70d35e1cd6cc69ef21d5ff506ac70b38cba4d1aa2c212acd8fe5407d00566a97f380b36e3720c16b7a73f3f79f055620063f649c101b0717c4737726da29d52e6e7db38e88467648da558653772ff2bcf0e59ed7a632081552bd0040a74fde0bc8227ee4021be646f9e5d5a9cb17b51bd6159e9f837984913e314bf4aa631a4f11d0fb5e6d04000ab566fb3f850e9efe1bd31a9e263eb533cd9a1fa101b8a527bc91a36eaca92d234efdecf448e3798eaa3b2c03b031a9c280d3ba21da38e487c560dd4e882df22c636c844adf0775441bda95de367dd124900650d1608ba03e0707efc0747a2affb74dfc71eb08798dcc25277c84d30b60a4aadc0d5a1c2e89d457014e4a4b3ddf27e8e396af16439595d07779448d3837a2bc17df8c5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.client.ClientApplication" />
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.authservice.AuthServiceApplication" />
+      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W -DJWT_SECRET=a78db70d35e1cd6cc69ef21d5ff506ac70b38cba4d1aa2c212acd8fe5407d00566a97f380b36e3720c16b7a73f3f79f055620063f649c101b0717c4737726da29d52e6e7db38e88467648da558653772ff2bcf0e59ed7a632081552bd0040a74fde0bc8227ee4021be646f9e5d5a9cb17b51bd6159e9f837984913e314bf4aa631a4f11d0fb5e6d04000ab566fb3f850e9efe1bd31a9e263eb533cd9a1fa101b8a527bc91a36eaca92d234efdecf448e3798eaa3b2c03b031a9c280d3ba21da38e487c560dd4e882df22c636c844adf0775441bda95de367dd124900650d1608ba03e0707efc0747a2affb74dfc71eb08798dcc25277c84d30b60a4aadc0d5a1c2e89d457014e4a4b3ddf27e8e396af16439595d07779448d3837a2bc17df8c5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,6 +132,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-microservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.usermicroservice.UserMicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.ServerApplication" />
+      <item itemvalue="Spring Boot.UserMicroserviceApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -155,7 +164,12 @@
       <updated>1739724590921</updated>
       <workItem from="1739724591942" duration="2850000" />
       <workItem from="1739793612008" duration="14000" />
-      <workItem from="1739882373150" duration="4310000" />
+      <workItem from="1739882373150" duration="5525000" />
+      <workItem from="1740051198155" duration="605000" />
+      <workItem from="1740056994340" duration="3713000" />
+      <workItem from="1740073057215" duration="8516000" />
+      <workItem from="1740126900434" duration="809000" />
+      <workItem from="1740401225028" duration="7263000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -165,15 +179,56 @@
       <option name="project" value="LOCAL" />
       <updated>1739882512099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="добавлен api-gateway">
+      <option name="closed" value="true" />
+      <created>1739887159647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739887159647</updated>
+    </task>
+    <task id="LOCAL-00003" summary="создан микросервис для пользователей">
+      <option name="closed" value="true" />
+      <created>1740082017232</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740082017232</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="user-microservice" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="добавлен сервер для микросервисов" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлен сервер для микросервисов" />
+    <MESSAGE value="добавлен api-gateway" />
+    <MESSAGE value="создан микросервис для пользователей" />
+    <option name="LAST_COMMIT_MESSAGE" value="создан микросервис для пользователей" />
   </component>
 </project>
