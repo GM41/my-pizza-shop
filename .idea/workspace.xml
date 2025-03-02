@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="fixed configuration errors">
-      <change afterPath="$PROJECT_DIR$/category-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/test/java/org/example/categoryservice/CategoryServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="created Category and CategoryDto classes, and Category Repository">
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategorySrevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/db/changelog/changeset/create-category-table.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CategoryServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -141,6 +141,7 @@
     <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="category-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.categoryservice.CategoryServiceApplication" />
+      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,21 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1740910660043</updated>
     </task>
-    <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
+    <task id="LOCAL-00005" summary="init category service">
       <option name="closed" value="true" />
-      <created>1740501083366</created>
+      <created>1740910999834</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1740501083366</updated>
+      <updated>1740910999834</updated>
     </task>
-    <task id="LOCAL-00006" summary="+business logic and +category field in product">
+    <task id="LOCAL-00006" summary="created Category and CategoryDto classes, and Category Repository">
       <option name="closed" value="true" />
-      <created>1740501909741</created>
+      <created>1740911568600</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1740501909741</updated>
+      <updated>1740911568600</updated>
     </task>
     <task id="LOCAL-00007" summary="update service properties and added db migration">
       <option name="closed" value="true" />
@@ -257,7 +258,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +297,8 @@
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
     <MESSAGE value="fixed configuration errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed configuration errors" />
+    <MESSAGE value="init category service" />
+    <MESSAGE value="created Category and CategoryDto classes, and Category Repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Category and CategoryDto classes, and Category Repository" />
   </component>
 </project>
