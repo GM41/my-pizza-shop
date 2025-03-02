@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="created Category and CategoryDto classes, and Category Repository">
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategorySrevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/db/changelog/changeset/create-category-table.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="created Service, Controller, Mapper and added db migration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +66,7 @@
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication (1).executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.CategoryServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
@@ -250,15 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740911568600</updated>
     </task>
-    <task id="LOCAL-00007" summary="update service properties and added db migration">
+    <task id="LOCAL-00007" summary="created Service, Controller, Mapper and added db migration">
       <option name="closed" value="true" />
-      <created>1740502515833</created>
+      <created>1740913581530</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1740502515833</updated>
+      <updated>1740913581530</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +291,7 @@
     <MESSAGE value="fixed configuration errors" />
     <MESSAGE value="init category service" />
     <MESSAGE value="created Category and CategoryDto classes, and Category Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="created Category and CategoryDto classes, and Category Repository" />
+    <MESSAGE value="created Service, Controller, Mapper and added db migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Service, Controller, Mapper and added db migration" />
   </component>
 </project>
