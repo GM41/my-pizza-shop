@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="fixed configuration errors">
+      <change afterPath="$PROJECT_DIR$/category-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/test/java/org/example/categoryservice/CategoryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +32,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="auth-service" />
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
@@ -71,7 +79,7 @@
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "category-service",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
@@ -130,6 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="category-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.categoryservice.CategoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="product-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.productservice.ProductServiceApplication" />
@@ -153,6 +168,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.CategoryServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -209,13 +225,13 @@
       <option name="project" value="LOCAL" />
       <updated>1740082017232</updated>
     </task>
-    <task id="LOCAL-00004" summary="init product service">
+    <task id="LOCAL-00004" summary="fixed configuration errors">
       <option name="closed" value="true" />
-      <created>1740500936306</created>
+      <created>1740910660043</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1740500936306</updated>
+      <updated>1740910660043</updated>
     </task>
     <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
       <option name="closed" value="true" />
@@ -241,7 +257,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +295,7 @@
     <MESSAGE value="added entity and dto classes, and also repository" />
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="создан микросервис для пользователей" />
+    <MESSAGE value="fixed configuration errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed configuration errors" />
   </component>
 </project>
