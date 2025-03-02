@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="auth-service" />
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
@@ -71,7 +68,7 @@
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "order-srevice",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
