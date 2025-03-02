@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="init order service">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added Service, Controller and Mapper">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/db/changelog/changeset/create-order-table.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +71,7 @@
     "Spring Boot.AuthServiceApplication (1).executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
@@ -96,6 +93,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\auth-service\src\main\resources\db.changelog" />
@@ -112,7 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -140,6 +140,7 @@
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.orderservice.OrderServiceApplication" />
+      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,21 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1740914564481</updated>
     </task>
-    <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
+    <task id="LOCAL-00005" summary="added Entity, Dto and Repository">
       <option name="closed" value="true" />
-      <created>1740501083366</created>
+      <created>1740915231300</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1740501083366</updated>
+      <updated>1740915231300</updated>
     </task>
-    <task id="LOCAL-00006" summary="+business logic and +category field in product">
+    <task id="LOCAL-00006" summary="added Service, Controller and Mapper">
       <option name="closed" value="true" />
-      <created>1740501909741</created>
+      <created>1740916481423</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1740501909741</updated>
+      <updated>1740916481423</updated>
     </task>
     <task id="LOCAL-00007" summary="update service properties and added db migration">
       <option name="closed" value="true" />
@@ -256,7 +257,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +296,8 @@
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
     <MESSAGE value="init order service" />
-    <option name="LAST_COMMIT_MESSAGE" value="init order service" />
+    <MESSAGE value="added Entity, Dto and Repository" />
+    <MESSAGE value="added Service, Controller and Mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Service, Controller and Mapper" />
   </component>
 </project>
