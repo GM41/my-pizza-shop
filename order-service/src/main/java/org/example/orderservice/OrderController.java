@@ -1,5 +1,6 @@
 package org.example.orderservice;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -20,7 +21,7 @@ public class OrderController {
     private OrderMapper orderMapper;
 
     @PostMapping
-    public ResponseEntity<Order> createOrder(@RequestBody OrderDto dto) {
+    public ResponseEntity<Order> createOrder(@Valid @RequestBody OrderDto dto) {
         return new ResponseEntity<>(orderService.save(dto), HttpStatus.CREATED);
     }
 
@@ -39,7 +40,7 @@ public class OrderController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Order> updateOrder(@RequestBody OrderDto dto, @PathVariable Long id) {
+    public ResponseEntity<Order> updateOrder(@Valid @RequestBody OrderDto dto, @PathVariable Long id) {
         return new ResponseEntity<>(orderService.updateOrder(orderMapper.dtoToEntity(dto, id)), HttpStatus.OK);
     }
 

@@ -1,5 +1,6 @@
 package org.example.orderservice;
 
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,10 +28,16 @@ public class OrderService {
     }
 
     public Order updateOrder(Order order){
+        if(!orderRepository.existsById(order.getId())){
+            throw new EntityNotFoundException("Order Not Found");
+        }
         return orderRepository.save(order);
     }
 
     public void deleteOrder(Long id){
+        if(!orderRepository.existsById(id)){
+            throw new EntityNotFoundException("Order Not Found");
+        }
         orderRepository.deleteById(id);
     }
 }
