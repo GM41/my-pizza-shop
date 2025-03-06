@@ -1,5 +1,6 @@
 package org.example.productservice;
 
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,10 +28,16 @@ public class ProductService {
     }
 
     public Product updateProduct(Product product) {
+        if(!productRepository.existsById(product.getId())) {
+            throw new EntityNotFoundException("Product not found");
+        }
         return productRepository.save(product);
     }
 
     public void deleteProduct(Long id) {
+        if(!productRepository.existsById(id)){
+            throw new EntityNotFoundException("Product not found");
+        }
         productRepository.deleteById(id);
     }
 }

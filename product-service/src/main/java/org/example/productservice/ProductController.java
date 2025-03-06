@@ -1,5 +1,6 @@
 package org.example.productservice;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -19,7 +20,7 @@ public class ProductController {
     private ProductMapper productMapper;
 
     @PostMapping
-    public ResponseEntity<Product> createProduct(@RequestBody ProductDto dto) {
+    public ResponseEntity<Product> createProduct(@Valid @RequestBody ProductDto dto) {
         return new ResponseEntity<>(productService.createProduct(dto), HttpStatus.CREATED);
     }
 
@@ -38,7 +39,7 @@ public class ProductController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Product> updateProduct(@RequestBody ProductDto  productDto, @PathVariable Long id) {
+    public ResponseEntity<Product> updateProduct(@Valid @RequestBody ProductDto  productDto, @PathVariable Long id) {
         return new ResponseEntity<>(productService.updateProduct(productMapper.dtoToEntity(productDto, id)),
                 HttpStatus.OK);
     }

@@ -3,3 +3,5 @@ databaseChangeLog:
       file: db/changelog/changeset/create-products-table.yaml
   - include:
       file: db/changelog/changeset/update-products-table.yaml
+  - include:
+      file: db/changelog/changeset/update-price-type.yaml

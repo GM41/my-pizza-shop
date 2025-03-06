@@ -1,13 +1,22 @@
 package org.example.productservice;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductDto {
+    @NotBlank(message = "name can`t be blank")
     private String name;
-    private int price;
+    @NotNull(message = "price can`t be null")
+    @Positive(message = "price must be positive")
+    private double price;
+    @NotNull(message = "categoryId can`t be null")
     private Long categoryId;
 
     public String getName() {
@@ -18,11 +27,11 @@ public class ProductDto {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

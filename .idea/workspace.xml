@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added service, mapper and controller + fixed repository">
-      <change afterPath="$PROJECT_DIR$/orderItems-service/src/main/resources/db/changelog/changeset/create-orderItem-table.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderItems-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration">
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/changeset/update-price-type.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,15 +76,12 @@
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.CategoryServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.OrderItemsServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "orderItems-service",
-    "git-widget-placeholder": "order-srevice",
-    "git-widget-placeholder": "category-service",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "git-widget-placeholder": "validation",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
@@ -98,9 +99,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\auth-service\src\main\resources\db.changelog" />
@@ -117,7 +115,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderItemsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -142,6 +140,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="category-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.categoryservice.CategoryServiceApplication" />
+      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderItemsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="orderItems-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.orderitemsservice.OrderItemsServiceApplication" />
@@ -153,14 +159,6 @@
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.orderservice.OrderServiceApplication" />
-      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="category-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.categoryservice.CategoryServiceApplication" />
       <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,9 +187,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.CategoryServiceApplication" />
       <item itemvalue="Spring Boot.OrderItemsServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
-      <item itemvalue="Spring Boot.CategoryServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -223,6 +221,7 @@
       <workItem from="1740073057215" duration="8516000" />
       <workItem from="1740126900434" duration="809000" />
       <workItem from="1740401225028" duration="7263000" />
+      <workItem from="1741249555893" duration="7186000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -248,39 +247,39 @@
       <option name="project" value="LOCAL" />
       <updated>1740082017232</updated>
     </task>
-    <task id="LOCAL-00004" summary="init orderItems service">
+    <task id="LOCAL-00004" summary="init product service">
       <option name="closed" value="true" />
-      <created>1740922492098</created>
+      <created>1740500936306</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1740922492098</updated>
+      <updated>1740500936306</updated>
     </task>
-    <task id="LOCAL-00005" summary="added entity, repository and dto">
+    <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
       <option name="closed" value="true" />
-      <created>1740922536278</created>
+      <created>1740501083366</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1740922536278</updated>
+      <updated>1740501083366</updated>
     </task>
-    <task id="LOCAL-00006" summary="added service, mapper and controller + fixed repository">
+    <task id="LOCAL-00006" summary="+business logic and +category field in product">
       <option name="closed" value="true" />
-      <created>1740923639945</created>
+      <created>1740501909741</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1740923639945</updated>
+      <updated>1740501909741</updated>
     </task>
-    <task id="LOCAL-00007" summary="created Service, Controller, Mapper and added db migration">
+    <task id="LOCAL-00007" summary="update service properties and added db migration">
       <option name="closed" value="true" />
-      <created>1740913581530</created>
+      <created>1740502515833</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1740913581530</updated>
+      <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,16 +317,6 @@
     <MESSAGE value="added entity and dto classes, and also repository" />
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
-    <MESSAGE value="fixed configuration errors" />
-    <MESSAGE value="init category service" />
-    <MESSAGE value="created Category and CategoryDto classes, and Category Repository" />
-    <MESSAGE value="created Service, Controller, Mapper and added db migration" />
-    <MESSAGE value="init order service" />
-    <MESSAGE value="added Entity, Dto and Repository" />
-    <MESSAGE value="added Service, Controller and Mapper" />
-    <MESSAGE value="init orderItems service" />
-    <MESSAGE value="added entity, repository and dto" />
-    <MESSAGE value="added service, mapper and controller + fixed repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="added service, mapper and controller + fixed repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="создан микросервис для пользователей" />
   </component>
 </project>
