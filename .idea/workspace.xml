@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added Service, Controller and Mapper">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/db/changelog/changeset/create-order-table.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+    </list>
     <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="created Service, Controller, Mapper and added db migration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +74,11 @@
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.CategoryServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
+    "git-widget-placeholder": "order-srevice",
     "git-widget-placeholder": "category-service",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
@@ -89,6 +97,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\auth-service\src\main\resources\db.changelog" />
@@ -105,7 +116,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CategoryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -126,6 +137,14 @@
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.authservice.AuthServiceApplication" />
       <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W -DJWT_SECRET=a78db70d35e1cd6cc69ef21d5ff506ac70b38cba4d1aa2c212acd8fe5407d00566a97f380b36e3720c16b7a73f3f79f055620063f649c101b0717c4737726da29d52e6e7db38e88467648da558653772ff2bcf0e59ed7a632081552bd0040a74fde0bc8227ee4021be646f9e5d5a9cb17b51bd6159e9f837984913e314bf4aa631a4f11d0fb5e6d04000ab566fb3f850e9efe1bd31a9e263eb533cd9a1fa101b8a527bc91a36eaca92d234efdecf448e3798eaa3b2c03b031a9c280d3ba21da38e487c560dd4e882df22c636c844adf0775441bda95de367dd124900650d1608ba03e0707efc0747a2affb74dfc71eb08798dcc25277c84d30b60a4aadc0d5a1c2e89d457014e4a4b3ddf27e8e396af16439595d07779448d3837a2bc17df8c5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.orderservice.OrderServiceApplication" />
+      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,6 +180,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.OrderServiceApplication" />
       <item itemvalue="Spring Boot.CategoryServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -218,29 +238,29 @@
       <option name="project" value="LOCAL" />
       <updated>1740082017232</updated>
     </task>
-    <task id="LOCAL-00004" summary="fixed configuration errors">
+    <task id="LOCAL-00004" summary="init order service">
       <option name="closed" value="true" />
-      <created>1740910660043</created>
+      <created>1740914564481</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1740910660043</updated>
+      <updated>1740914564481</updated>
     </task>
-    <task id="LOCAL-00005" summary="init category service">
+    <task id="LOCAL-00005" summary="added Entity, Dto and Repository">
       <option name="closed" value="true" />
-      <created>1740910999834</created>
+      <created>1740915231300</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1740910999834</updated>
+      <updated>1740915231300</updated>
     </task>
-    <task id="LOCAL-00006" summary="created Category and CategoryDto classes, and Category Repository">
+    <task id="LOCAL-00006" summary="added Service, Controller and Mapper">
       <option name="closed" value="true" />
-      <created>1740911568600</created>
+      <created>1740916481423</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1740911568600</updated>
+      <updated>1740916481423</updated>
     </task>
     <task id="LOCAL-00007" summary="created Service, Controller, Mapper and added db migration">
       <option name="closed" value="true" />
@@ -250,7 +270,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740913581530</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +312,10 @@
     <MESSAGE value="init category service" />
     <MESSAGE value="created Category and CategoryDto classes, and Category Repository" />
     <MESSAGE value="created Service, Controller, Mapper and added db migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="created Service, Controller, Mapper and added db migration" />
+    <MESSAGE value="init order service" />
+    <MESSAGE value="added Entity, Dto and Repository" />
+    <MESSAGE value="added Service, Controller and Mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Service, Controller and Mapper" />
+
   </component>
 </project>
