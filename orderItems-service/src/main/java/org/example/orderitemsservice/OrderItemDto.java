@@ -1,5 +1,8 @@
 package org.example.orderitemsservice;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
@@ -7,8 +10,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class OrderItemDto {
 
+    @NotNull(message = "orderId can`t be null")
     private Long orderId;
+    @NotNull(message = "pruductId can`t be null")
     private Long productId;
+    @NotNull(message = "amount can`t be null")
+    @Positive(message = "amount must be positive")
     private int amount;
 
     public Long getOrderId() {
