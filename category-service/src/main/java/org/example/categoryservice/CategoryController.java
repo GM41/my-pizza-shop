@@ -1,5 +1,6 @@
 package org.example.categoryservice;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -20,7 +21,7 @@ public class CategoryController {
     CategoryMapper categoryMapper;
 
     @PostMapping
-    public ResponseEntity<Category> createCategory(@RequestBody CategoryDto dto) {
+    public ResponseEntity<Category> createCategory(@Valid @RequestBody CategoryDto dto) {
         return new ResponseEntity<>(categorySrevice.createCategory(dto), HttpStatus.CREATED);
     }
 
@@ -39,7 +40,7 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Category> updateCategory(@RequestBody CategoryDto dto, @PathVariable Long id) {
+    public ResponseEntity<Category> updateCategory(@Valid @RequestBody CategoryDto dto, @PathVariable Long id) {
         return new ResponseEntity<>(categorySrevice.updateCategory(categoryMapper.dtoToEntity(dto, id)), HttpStatus.OK);
     }
 

@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="update service properties and added db migration">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/changeset/update-price-type.yaml" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added validation and exceptions">
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategorySrevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategorySrevice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +219,7 @@
       <workItem from="1740073057215" duration="8516000" />
       <workItem from="1740126900434" duration="809000" />
       <workItem from="1740401225028" duration="7263000" />
-      <workItem from="1741249555893" duration="7186000" />
+      <workItem from="1741249555893" duration="7852000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -247,13 +245,13 @@
       <option name="project" value="LOCAL" />
       <updated>1740082017232</updated>
     </task>
-    <task id="LOCAL-00004" summary="init product service">
+    <task id="LOCAL-00004" summary="added validation and exceptions">
       <option name="closed" value="true" />
-      <created>1740500936306</created>
+      <created>1741264146385</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1740500936306</updated>
+      <updated>1741264146385</updated>
     </task>
     <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
       <option name="closed" value="true" />
@@ -279,7 +277,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +315,7 @@
     <MESSAGE value="added entity and dto classes, and also repository" />
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="создан микросервис для пользователей" />
+    <MESSAGE value="added validation and exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added validation and exceptions" />
   </component>
 </project>

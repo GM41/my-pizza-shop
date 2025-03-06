@@ -1,5 +1,6 @@
 package org.example.categoryservice;
 
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,10 +28,16 @@ public class CategorySrevice {
     }
 
     public Category updateCategory(Category category) {
+        if(!categoryRepository.existsById(category.getId())) {
+            throw new EntityNotFoundException("Category with id " + category.getId() + " not found");
+        }
         return categoryRepository.save(category);
     }
 
     public void deleteCategory(Long id) {
+        if(!categoryRepository.existsById(id)) {
+            throw new EntityNotFoundException("Category with id " + id + " not found");
+        }
         categoryRepository.deleteById(id);
     }
 }
