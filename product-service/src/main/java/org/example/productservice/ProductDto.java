@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ProductDto {
     @NotBlank(message = "name can`t be blank")
+    @NotNull(message = "name can`t be null")
     private String name;
     @NotNull(message = "price can`t be null")
     @Positive(message = "price must be positive")

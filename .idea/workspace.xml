@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added validation and exceptions">
-      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategorySrevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategorySrevice.java" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added category validation and exceptions">
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +213,7 @@
       <workItem from="1740073057215" duration="8516000" />
       <workItem from="1740126900434" duration="809000" />
       <workItem from="1740401225028" duration="7263000" />
-      <workItem from="1741249555893" duration="7852000" />
+      <workItem from="1741249555893" duration="8176000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -253,13 +247,13 @@
       <option name="project" value="LOCAL" />
       <updated>1741264146385</updated>
     </task>
-    <task id="LOCAL-00005" summary="added entity and dto classes, and also repository">
+    <task id="LOCAL-00005" summary="added category validation and exceptions">
       <option name="closed" value="true" />
-      <created>1740501083366</created>
+      <created>1741264758758</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1740501083366</updated>
+      <updated>1741264758758</updated>
     </task>
     <task id="LOCAL-00006" summary="+business logic and +category field in product">
       <option name="closed" value="true" />
@@ -277,7 +271,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740502515833</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +310,7 @@
     <MESSAGE value="+business logic and +category field in product" />
     <MESSAGE value="update service properties and added db migration" />
     <MESSAGE value="added validation and exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added validation and exceptions" />
+    <MESSAGE value="added category validation and exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added category validation and exceptions" />
   </component>
 </project>
