@@ -21,8 +21,8 @@ public class OrderController {
     private OrderMapper orderMapper;
 
     @PostMapping
-    public ResponseEntity<Order> createOrder(@Valid @RequestBody OrderDto dto) {
-        return new ResponseEntity<>(orderService.save(dto), HttpStatus.CREATED);
+    public ResponseEntity<OrderDto> createOrder(@Valid @RequestBody OrderDto dto) {
+        return new ResponseEntity<>(orderMapper.entityToDto(orderService.save(dto)), HttpStatus.CREATED);
     }
 
     @GetMapping

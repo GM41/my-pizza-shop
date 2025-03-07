@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added orderItem validation and exceptions">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/GlobalExceptionHandler.java" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added authentication validation and exceptions">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/config/MapperConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/dto/AuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/dto/AuthRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/org/example/categoryservice/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.UserMicroserviceApplication.executor": "Run",
-    "git-widget-placeholder": "validation",
+    "git-widget-placeholder": "#6 on validation",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
@@ -219,7 +218,8 @@
       <workItem from="1740073057215" duration="8516000" />
       <workItem from="1740126900434" duration="809000" />
       <workItem from="1740401225028" duration="7263000" />
-      <workItem from="1741249555893" duration="10767000" />
+      <workItem from="1741249555893" duration="10807000" />
+      <workItem from="1741332846855" duration="459000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -285,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741266006690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added authentication validation and exceptions">
+      <option name="closed" value="true" />
+      <created>1741267439296</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741267439296</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +336,7 @@
     <MESSAGE value="added @NotNull annotation to product name" />
     <MESSAGE value="added order validation and exceptions" />
     <MESSAGE value="added orderItem validation and exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added orderItem validation and exceptions" />
+    <MESSAGE value="added authentication validation and exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authentication validation and exceptions" />
   </component>
 </project>
