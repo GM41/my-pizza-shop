@@ -1,7 +1,10 @@
 package org.example.authservice;
 
+import jakarta.validation.Valid;
 import org.example.authservice.dto.AuthRequest;
+import org.example.authservice.dto.UserDto;
 import org.example.authservice.service.AuthService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,15 +18,17 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
     @Autowired
     private AuthService service;
+    @Autowired
+    private ModelMapper mapper;
 
     @PostMapping("/register")
-    public ResponseEntity<User> addNewUser(@RequestBody User user) {
-        return new ResponseEntity<>(service.saveUser(user), HttpStatus.OK);
+    public ResponseEntity<UserDto> addNewUser(@Valid @RequestBody UserDto dto) {
+        return new ResponseEntity<>(service.saveUser(dto), HttpStatus.CREATED);
     }
 
     @PostMapping("/token")
-    public String getToken(@RequestBody AuthRequest request){
-        return service.generateToken(request.getLogin(), request.getPassword());
+    public ResponseEntity<String> getToken(@Valid @RequestBody AuthRequest request){
+        return new ResponseEntity<>(service.generateToken(request.getLogin(), request.getPassword()), HttpStatus.OK);
     }
 
     @GetMapping("/validate")
