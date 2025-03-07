@@ -2,6 +2,8 @@ package org.example.authservice.service;
 
 import org.example.authservice.User;
 import org.example.authservice.UserRepository;
+import org.example.authservice.dto.UserDto;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,10 +24,13 @@ public class AuthService {
     private JwtService jwtService;
     @Autowired
     private AuthenticationManager authenticationManager;
+    @Autowired
+    private ModelMapper modelMapper;
 
-    public User saveUser(User user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return repository.save(user);
+    public UserDto saveUser(UserDto dto) {
+        User user = new User();
+        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        return modelMapper.map(repository.save(user), UserDto.class);
     }
 
     public String generateToken(String name, String password){

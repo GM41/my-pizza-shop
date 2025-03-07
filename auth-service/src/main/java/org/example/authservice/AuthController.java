@@ -22,8 +22,8 @@ public class AuthController {
     private ModelMapper mapper;
 
     @PostMapping("/register")
-    public ResponseEntity<UserDto> addNewUser(@Valid @RequestBody User user) {
-        return new ResponseEntity<>(mapper.map(service.saveUser(user), UserDto.class), HttpStatus.CREATED);
+    public ResponseEntity<UserDto> addNewUser(@Valid @RequestBody UserDto dto) {
+        return new ResponseEntity<>(service.saveUser(dto), HttpStatus.CREATED);
     }
 
     @PostMapping("/token")
