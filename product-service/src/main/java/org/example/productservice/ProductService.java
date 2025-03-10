@@ -12,6 +12,8 @@ import java.util.List;
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
+    @Autowired
+    private ProductEventProducer productEventProducer;
 
     public List<Product> getAllProducts() { return productRepository.findAll(); }
 
@@ -39,5 +41,6 @@ public class ProductService {
             throw new EntityNotFoundException("Product not found");
         }
         productRepository.deleteById(id);
+        productEventProducer.sendProductDeletedEvent(id);
     }
 }
