@@ -1,6 +1,8 @@
-package org.example.orderitemsservice;
+package org.example.orderitemsservice.communication;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.example.orderitemsservice.OrderItem;
+import org.example.orderitemsservice.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

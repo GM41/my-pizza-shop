@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="исправлены все дополнительные замечания">
-      <change afterPath="$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/ProductEventConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductEventProducer.java" afterDir="false" />
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added communication between product and orderItem microservices">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/communication/OrderEventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/communication/SpecialOrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/communication/OrderEventConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderItems-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orderItems-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderItems-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orderItems-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/example/productservice/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/ProductEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/communication/ProductEventConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.CategoryServiceApplication.executor": "Run",
     "Spring Boot.ClientApplication.executor": "Run",
-    "Spring Boot.OrderItemsServiceApplication.executor": "Run",
+    "Spring Boot.OrderItemsServiceApplication.executor": "Debug",
     "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
@@ -119,7 +115,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ServerApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -230,7 +226,7 @@
       <workItem from="1741336912408" duration="576000" />
       <workItem from="1741354026873" duration="41000" />
       <workItem from="1741354149138" duration="42000" />
-      <workItem from="1741613201259" duration="2171000" />
+      <workItem from="1741613201259" duration="7905000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -312,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741333372174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added communication between product and orderItem microservices">
+      <option name="closed" value="true" />
+      <created>1741615763587</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741615763587</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +361,18 @@
     <MESSAGE value="added orderItem validation and exceptions" />
     <MESSAGE value="added authentication validation and exceptions" />
     <MESSAGE value="исправлены все замечания" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправлены все замечания" />
+    <MESSAGE value="added communication between product and orderItem microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="added communication between product and orderItem microservices" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/orderItems-service/src/main/java/org/example/orderitemsservice/communication/OrderEventConsumer.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
