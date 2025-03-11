@@ -1,6 +1,7 @@
 package org.example.categoryservice;
 
 import jakarta.persistence.EntityNotFoundException;
+import org.example.categoryservice.communication.CategoryEventProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,6 +13,8 @@ import java.util.List;
 public class CategorySrevice {
     @Autowired
     private CategoryRepository categoryRepository;
+    @Autowired
+    private CategoryEventProducer categoryEventProducer;
 
     public List<Category> findAllCategories() {
         return categoryRepository.findAll();
@@ -39,5 +42,6 @@ public class CategorySrevice {
             throw new EntityNotFoundException("Category with id " + id + " not found");
         }
         categoryRepository.deleteById(id);
+        categoryEventProducer.sendCategoryDeleteEvent(id);
     }
 }
