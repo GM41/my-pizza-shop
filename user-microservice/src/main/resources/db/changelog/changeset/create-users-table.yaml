@@ -21,12 +21,12 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: password
-                  type: varchar(20)
+                  type: varchar(80)
                   constraints:
                     nullable: false
               - column:
                   name: email
                   type: varchar(20)
-              - column:
-                  name: birthday
-                  type: date
+                  constraints:
+                    unique: true
+                    nullable: false
