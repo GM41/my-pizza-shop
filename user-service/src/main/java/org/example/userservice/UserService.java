@@ -1,6 +1,7 @@
 package org.example.userservice;
 
 import jakarta.persistence.EntityNotFoundException;
+import org.example.userservice.communication.UserEventProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +16,8 @@ public class UserService {
     private UserRepository userRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private UserEventProducer userEventProducer;
 
     public List<User> findAll() {
         return userRepository.findAll();
@@ -49,5 +52,6 @@ public class UserService {
             throw new EntityNotFoundException("User not found");
         }
         userRepository.deleteById(id);
+        userEventProducer.sendUserDeleteEvent(id);
     }
 }
