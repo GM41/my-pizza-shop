@@ -3,17 +3,19 @@ package org.example.orderservice.communication;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.example.orderservice.Order;
 import org.example.orderservice.OrderService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Component
 public class UserEventConsumer {
-    @Autowired
-    private OrderService orderService;
+    private final OrderService orderService;
+
+    public UserEventConsumer(OrderService orderService) {
+        this.orderService = orderService;
+    }
 
     @KafkaListener(topics = "user-delete-event", groupId = "my-consumer-group")
     public void consumeUserDeleteEvent(ConsumerRecord<String, String> record){
