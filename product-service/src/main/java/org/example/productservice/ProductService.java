@@ -1,6 +1,7 @@
 package org.example.productservice;
 
 import jakarta.persistence.EntityNotFoundException;
+import org.example.productservice.communication.ProductEventProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,6 +13,8 @@ import java.util.List;
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
+    @Autowired
+    private ProductEventProducer productEventProducer;
 
     public List<Product> getAllProducts() { return productRepository.findAll(); }
 
@@ -39,5 +42,6 @@ public class ProductService {
             throw new EntityNotFoundException("Product not found");
         }
         productRepository.deleteById(id);
+        productEventProducer.sendProductDeletedEvent(id);
     }
 }

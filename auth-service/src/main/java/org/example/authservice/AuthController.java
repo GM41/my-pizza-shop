@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
     @Autowired
     private AuthService service;
-    @Autowired
-    private ModelMapper mapper;
 
     @PostMapping("/register")
     public ResponseEntity<UserDto> addNewUser(@Valid @RequestBody UserDto dto) {

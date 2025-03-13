@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="исправлены все замечания">
+    <list default="true" id="78bb485b-14df-499d-ad9b-3e91e0994212" name="Changes" comment="added communication between user and order microservices">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/org/example/authservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/communication/UserEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/example/orderservice/communication/UserEventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/userservice/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/org/example/userservice/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,43 +57,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CategoryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ClientApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderItemsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserMicroserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#6 on validation&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/IdeaProjects/my-pizza-shop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication (1).executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.CategoryServiceApplication.executor": "Run",
+    "Spring Boot.ClientApplication.executor": "Run",
+    "Spring Boot.OrderItemsServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.ServerApplication.executor": "Run",
+    "Spring Boot.UserMicroserviceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "git-widget-placeholder": "#7 on kafka",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/my-pizza-shop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\IdeaProjects\my-pizza-shop\auth-service\src\main\resources\db.changelog" />
@@ -110,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -174,14 +178,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="user-microservice" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.usermicroservice.UserMicroserviceApplication" />
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.userservice.UserServiceApplication" />
+      <option name="VM_PARAMETERS" value="-DDB_USERNAME=root -DDB_PASSWORD=GvY$01$$W" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.CategoryServiceApplication" />
       <item itemvalue="Spring Boot.OrderItemsServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
@@ -189,7 +195,6 @@
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.ServerApplication" />
-      <item itemvalue="Spring Boot.UserMicroserviceApplication" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -219,6 +224,12 @@
       <workItem from="1741249555893" duration="10807000" />
       <workItem from="1741332846855" duration="539000" />
       <workItem from="1741336912408" duration="576000" />
+      <workItem from="1741354026873" duration="41000" />
+      <workItem from="1741354149138" duration="42000" />
+      <workItem from="1741613201259" duration="8295000" />
+      <workItem from="1741690704560" duration="1711000" />
+      <workItem from="1741862175298" duration="2580000" />
+      <workItem from="1741869187744" duration="3483000" />
     </task>
     <task id="LOCAL-00001" summary="добавлен сервер для микросервисов">
       <option name="closed" value="true" />
@@ -300,7 +311,39 @@
       <option name="project" value="LOCAL" />
       <updated>1741333372174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added communication between product and orderItem microservices">
+      <option name="closed" value="true" />
+      <created>1741615763587</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741615763587</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added communication between order and orderItem microservices">
+      <option name="closed" value="true" />
+      <created>1741621929668</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741621929669</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added user-service">
+      <option name="closed" value="true" />
+      <created>1741786303951</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741786303951</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added communication between user and order microservices">
+      <option name="closed" value="true" />
+      <created>1741787241537</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741787241537</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +360,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="user-microservice" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -345,6 +388,10 @@
     <MESSAGE value="added orderItem validation and exceptions" />
     <MESSAGE value="added authentication validation and exceptions" />
     <MESSAGE value="исправлены все замечания" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправлены все замечания" />
+    <MESSAGE value="added communication between product and orderItem microservices" />
+    <MESSAGE value="added communication between order and orderItem microservices" />
+    <MESSAGE value="added user-service" />
+    <MESSAGE value="added communication between user and order microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="added communication between user and order microservices" />
   </component>
 </project>

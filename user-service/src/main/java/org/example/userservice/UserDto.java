@@ -1,35 +1,22 @@
-package org.example.authservice.dto;
+package org.example.userservice;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Calendar;
-
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDto {
-    @NotNull(message = "login can`t be null")
-    @NotBlank(message = "login can`t be blank")
+    @NotBlank(message = "Login is required")
+    @NotNull(message = "Login can`t be null")
     private String login;
-    @NotNull(message = "password can`t be null")
-    @NotBlank(message = "password can`t be blank")
+    @NotNull(message = "Password can`t be null")
+    @NotBlank(message = "Password is required")
     private String password;
-    @NotNull(message = "email can`t be null")
-    @NotBlank(message = "email can`t be blank")
+    @NotNull(message = "Email can`t be null")
+    @NotBlank(message = "Email is required")
     private String email;
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
 
     public String getLogin() {
         return login;
@@ -39,8 +26,16 @@ public class UserDto {
         this.login = login;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setEmail(String email) {

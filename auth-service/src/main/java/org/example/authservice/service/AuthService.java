@@ -2,6 +2,7 @@ package org.example.authservice.service;
 
 import org.example.authservice.User;
 import org.example.authservice.UserRepository;
+import org.example.authservice.config.UserMapper;
 import org.example.authservice.dto.UserDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,12 +26,15 @@ public class AuthService {
     @Autowired
     private AuthenticationManager authenticationManager;
     @Autowired
-    private ModelMapper modelMapper;
+    private UserMapper userMapper;
+
 
     public UserDto saveUser(UserDto dto) {
         User user = new User();
+        user.setEmail(dto.getEmail());
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
-        return modelMapper.map(repository.save(user), UserDto.class);
+        user.setLogin(dto.getLogin());
+        return userMapper.entityToDto(repository.save(user));
     }
 
     public String generateToken(String name, String password){
